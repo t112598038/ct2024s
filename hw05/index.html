@@ -185,7 +185,11 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次作業是利用HW04組成的ttf字體檔，使用zi2zi的font to font模仿人寫得
+      字型，學習該字型的風格生成出同一個字。但使用RTX2080、1000個epoch、
+      <br>歷時36小時左右的訓練時間，生成出來大部分字型都沒辦法辨認出來原本的
+      字，這可能跟訓練用的字體標準程度有關，需要寫得更工整，可能才比較有實
+      <br>用價值。  
     </div>
   </div>
 
@@ -201,34 +205,114 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>2</td>
-          <td>Simple baseline - 描述、描述、描述</td>
+          <td>Simple baseline - 產生訓練樣本 (4808字/2) (放入image_train，壓縮檔上傳)</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
-          <td>Medium baseline - 描述、描述、描述 </td>
+          <td id='m2'>2</td>
+          <td>Simple baseline - 產生驗證樣本 (4808字/2) (放入image_val，壓縮檔上傳)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 描述、描述、描述 </td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td id='m3'>4</td>
+          <td>Medium baseline - 繳交字體的對比檔案 </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td id='m4'>2</td>
+          <td>Strong baseline - 最後生成結果 (於infer_1資料夾內)</td>
         </tr>
       </table>
     </div>
   </div>
 
+
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <h1>Simple baseline</h1>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4><u>成果顯示</u></h4>
+      <table style="width:100%">
+        <tbody><tr>
+          <th>image_train</th>
+        </tr>
+        <tr>
+           <th><img src="./Simple/hw05_image_train.jpg" alt="成果圖片" width="100%" height="100%"></th>
+        </tr>
+        <tr>
+          <th>image_train</th>
+        </tr>
+        <tr>
+           <th><img src="./Simple/hw05_image_val.jpg" alt="成果圖片" width="100%" height="100%"></th>
+        </tr>
+      </tbody></table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h1>Medium baseline</h1>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4><u>成果顯示</u></h4>
+      <table style="width:100%">
+        <tbody><tr>
+          <th>experiment</th>
+        </tr>
+        <tr>
+           <th>
+            壓縮檔位置連結：
+            <input type="button" name="back" onclick="location.href='https://github.com/t112598038/ct2024s/tree/main/hw05/Medium'" value="按我 ٩(｡・ω・｡)و 前往">
+            <br>     
+            <a href="https://drive.google.com/file/d/1v1ZJsHo82JYhliZ53Q7Z1t24uhdwQvqt/view?usp=drive_link" download="experiment_112598038_徐浩恩">Download experiment_112598038_徐浩恩</a><br>  
+          </th>
+        </tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h1>Strong baseline</h1>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4><u>成果顯示</u></h4>
+      <table style="width:100%">
+        <tbody><tr>
+          <th>infer</th>
+        </tr>
+        <tr>
+           <th>  
+            壓縮檔位置連結：
+            <input type="button" name="back" onclick="location.href='https://github.com/t112598038/ct2024s/tree/main/hw05/Strong'" value="按我 ٩(｡・ω・｡)و 前往">
+            <br>     
+            <a href="https://drive.google.com/file/d/1QmDusBgrxYN-L-7slo9HkrK8PZuWJ3SZ/view?usp=drive_link" download="infer_112598038_徐浩恩.zip">Download infer_112598038_徐浩恩</a><br>
+          </th>
+        </tr>
+      </tbody></table>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
 
